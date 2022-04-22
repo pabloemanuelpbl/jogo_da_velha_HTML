@@ -8,8 +8,8 @@ body {
 }
 
 .button {
-    width: 100px;
-    height: 30px;
+    width: 80px;
+    height: 20px;
     background-color: #eee;
     margin-top: 10px;
     cursor: pointer;
@@ -21,8 +21,8 @@ body {
     width: 50px;
     background: #eee;
     display: inline-block;
-    padding: 45px;
-    font-size: 60px;
+    padding: 35px;
+    font-size: 40px;
     margin: 5px;
     cursor: pointer;
 }

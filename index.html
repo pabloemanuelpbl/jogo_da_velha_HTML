@@ -10,45 +10,51 @@
 <body>
     <h1>Jogo da Velha</h1>
 
-    <div>
-        <div id="1" class="quadrado bordasuperior_esquerda" onclick="escolherQuadrado(this)">-</div>
-        <div id="2" class="quadrado" onclick="escolherQuadrado(this)">-</div>
-        <div id="3" class="quadrado bordasuperior_direita" onclick="escolherQuadrado(this)">-</div>
-    </div>
-    <div>
-        <div id="4" class="quadrado" onclick="escolherQuadrado(this)">-</div>
-        <div id="5" class="quadrado" onclick="escolherQuadrado(this)">-</div>
-        <div id="6" class="quadrado" onclick="escolherQuadrado(this)">-</div>
-    </div>
-    <div>
-        <div id="7" class="quadrado bordainferior_esquerda" onclick="escolherQuadrado(this)">-</div>
-        <div id="8" class="quadrado" onclick="escolherQuadrado(this)">-</div>
-        <div id="9" class="quadrado bordainferior_direita" onclick="escolherQuadrado(this)">-</div>
+    <div style="display: flex; align-items: center; justify-content: center;">
+        
+        <div class="status">
+            <label>
+                jogador:
+            </label>
+            <label id="jogador-selecionado">
+                X
+            </label>
+        </div>
+        
+        <div style="padding-left: 10px; padding-right: 40px;">
+            <div>
+                <div id="1" class="quadrado bordasuperior_esquerda" onclick="escolherQuadrado(this)">-</div>
+                <div id="2" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+                <div id="3" class="quadrado bordasuperior_direita" onclick="escolherQuadrado(this)">-</div>
+            </div>
+            <div>
+                <div id="4" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+                <div id="5" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+                <div id="6" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+            </div>
+            <div>
+                <div id="7" class="quadrado bordainferior_esquerda" onclick="escolherQuadrado(this)">-</div>
+                <div id="8" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+                <div id="9" class="quadrado bordainferior_direita" onclick="escolherQuadrado(this)">-</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="status">
+                X = <strong id="x">0</strong> <BR> O = <strong id="o">0</strong>
+            </div>
+            
+            <div>
+                <button class="button" onclick="restart()">
+                    Reiniciar
+                </button>
+            </div>
+        </div>
+
+        
     </div>
 
-    <div class="status">
-        <label>
-            jogador:
-        </label>
-        <label id="jogador-selecionado">
-            X
-        </label>
-    </div>
-
-    <div class="status">
-        <label>
-            vencedor:
-        </label>
-        <label id="vencedor-selecionado">
-
-        </label>
-    </div>
-
-    <div>
-        <button class="button" onclick="restart()">
-            Reiniciar
-        </button>
-    </div>
+    
 </body>
 <script src="script.js"></script>
 </html>
