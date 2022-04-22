@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+}
+
+.status {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    background-color: #eee;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+    /* quadrados */
+.quadrado {
+    text-align: center;
+    width: 50px;
+    background: #eee;
+    display: inline-block;
+    padding: 45px;
+    font-size: 60px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.quadrado_vencedor {
+    background-color: coral;
+}
+
+    /* detalhe de borda */
+.bordasuperior_esquerda {
+    border-top-left-radius: 30px;
+}
+
+.bordasuperior_direita {
+    border-top-right-radius: 30px;
+}
+
+.bordainferior_esquerda {
+    border-bottom-left-radius: 30px;
+}
+
+.bordainferior_direita {
+    border-bottom-right-radius: 30px;
+}
+
+
